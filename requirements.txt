@@ -1,0 +1,33 @@
+# Interview Coach 依赖包
+
+# ============ LLM ============
+anthropic>=0.40.0
+
+# ============ Agent框架 ============
+langgraph>=0.2.45
+langchain>=0.3.10
+langchain-anthropic>=0.3.0
+
+# ============ Web UI ============
+streamlit>=1.39.0
+
+# ============ 向量库 ============
+chromadb>=0.6.0
+
+# ============ 数据处理 ============
+pydantic>=2.10.0
+pydantic-settings>=2.6.0
+
+# ============ 工具库 ============
+python-dotenv>=1.0.0
+structlog>=24.4.0
+
+# ============ 开发工具 ============
+pytest>=8.3.0
+pytest-asyncio>=0.24.0
+black>=24.10.0
+mypy>=1.13.0
+
+# ============ 文档解析 ============
+beautifulsoup4>=4.12.0
+markdown>=3.7.0
