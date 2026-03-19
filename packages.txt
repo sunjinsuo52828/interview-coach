@@ -1,4 +1,5 @@
-streamlit>=1.28.0
-requests>=2.31.0
-pydantic>=2.0.0
-pydantic-settings>=2.0.0
+# System dependencies for Streamlit Cloud
+# This file is for apt-get packages, not Python packages
+# Python packages should be in requirements.txt
+
+# No additional system packages needed for this project
