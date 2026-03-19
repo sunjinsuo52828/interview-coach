@@ -17,7 +17,7 @@ class Settings(BaseSettings):
     )
 
     # ========== GLM API ==========
-    glm_api_key: str
+    glm_api_key: str = ""  # 允许为空，在UI中提示配置
     glm_model: str = "glm-4-air"  # 使用GLM-4.5-air (106B参数，深度分析更强)
 
     # ========== 应用配置 ==========

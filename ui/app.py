@@ -51,6 +51,27 @@ def init_session_state():
         st.session_state.error = None
 
 
+# ========== API Key 检查 ==========
+def check_api_key():
+    """检查API密钥是否配置"""
+    if not settings.glm_api_key:
+        st.error("""
+        ## ⚠️ API密钥未配置
+
+        请在 **Streamlit Cloud → Settings → Secrets** 中添加以下环境变量：
+
+        ```
+        GLM_API_KEY=your_api_key_here
+        ```
+
+        配置完成后，请刷新页面。
+        """)
+        st.stop()
+
+
+check_api_key()
+
+
 init_session_state()
 
 
